@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4rem;
+}
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.container {
+  max-width: 1180px; /* Giving Evenly Width For Every Items inside the container */
+  margin-inline: auto;
+  overflow: hidden;
+}
+nav {
+  background-color: rgb(107, 83, 240);
+  color: #fff;
+  box-shadow: 0 0 4px rgb(149, 149, 241); /* halka utheko dekhawnu ko lagi */
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+
+.navBar {
+  justify-content: space-between;
+  padding-block: 10px;
+}
+
+.websiteLogo img {
+  width: 120px;
+}
+
+.hoverLinks {
+  cursor: pointer;
+}
+.hoverLinks :hover {
+  color: aquamarine;
+}
+.hoverLinks :active {
+  color: red;
+}
+.nav-item.active{
+  color: violet;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.searchBar {
+  height: 32px;
+  gap: 8px;
+}
+#searchBox {
+  width: 200px;
+  height: 90%;
+  padding-inline: 12px; /* under the container not outside*/
+  border: 2px solid rgb(156, 142, 142);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+}
+.searchBtn {
+  background-color: rgb(42, 45, 214);
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+}
+.searchBtn:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: #333;
+}
+
+main {
+  padding-block: 20px;
+  margin-top: 80px;
+}
+.cardsContainer {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+}
+.card {
+  width: 360px;
+  min-height: 400px;
+  box-shadow: 0 0 4px #d4ecff;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 1px 1px 8px #d4ecff;
+  background-color: #f9fdff;
+  transform: translateY(-2px); /* slide to upward */
+}
+.cardHeader img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.cardContent {
+  padding: 12px;
+}
+.newsSource {
+  margin-block: 12px;
+}
+/* footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}  */
