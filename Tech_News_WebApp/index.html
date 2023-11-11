@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navBar container flex">
+
+            <a href="#" onclick="reload()" class="websiteLogo">
+                <img src="assets/webiste_logo.png" alt="Website Logo">
+            </a>
+
+
+            <div class="navLinks">
+
+                <ul class="flex">
+                    <li class="hoverLinks navItem" id ="sikkim" onclick="onNavItemClick('sikkim')">Sikkim</li>
+                    <li class="hoverLinks navItem" id = "about" onclick="onNavItemClick('about')">About</li>
+                    <li class="hoverLinks navItem" id="contact" onclick="onNavItemClick('contact')">Contact</li>
+                </ul>
+            </div>
+
+            <div class="searchBar flex">
+                <input type="text" id="searchBox" placeholder="hitech">
+                <button id="searchBtn" class="searchBtn">Search</button>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main>
+        <!-- Cards will be dynamically added using JavaScript -->
+        <div class="cardsContainer container flex" id="cardsContainer">
+        </div>
+    </main>
+    <template id="templateNewsCard">
+        <div class="card">
+            <div class="cardHeader">
+                <img src="https://via.placeholder.com/400x200" alt="" id="newsImg">
+    
+            </div>
+            <div class="cardContent">
+                <h3 id="newsTitle"> Title of the news </h3>
+                <h6 class="newsSource" id="newsSource"> Times of India </h6>
+                <p class="newsDesc" id="newsDesc"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+                    ipsam, aliquam, nulla tempora sed illum earum placeat repudiandae doloremque hic vel est, cumque
+                    perferendis?</p>
+            </div>
+        </div>
+    </template>
+
+
+    <!-- <footer>
+        <p>&copy; 2023 Tech News</p>
+    </footer> -->
+
+    <script src="script.js"></script>
+    <!-- Load library from the CDN -->
+
+
+</body>
+
+</html>
